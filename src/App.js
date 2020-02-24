@@ -1,11 +1,12 @@
 import React from 'react';
+import { LandingPage } from './LandingPage/LandingPage';
 
 function App()   {
   return (
     <>
-     <h1>Hello, from YelpClone</h1> 
+			<LandingPage />
     </>
-  );
+  )
 }
 
 export default App;
