@@ -1,14 +1,18 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar.js';
 import SearchBar from '../SearchBar/SearchBar.js';
+import styles from './Search.module.css';
+import SubNav from '../NavBar/SubNav/SubNav.js';
+import SearchResultSummary from './SearchResultSummary/SearchResultSummary.js';
+import SearchResults from './SearchResults/SearchResults.js';
 
 function Search(props) {
 	return (
 		<div>
 			<NavBar />
-			<SearchBar />
-			<button className={`button ${styles['nav-button']}`}>Log In</button>
-			<button className={`button ${styles['nav-button']}`}>Register</button>
+			<SubNav />
+			<SearchResultSummary />
+			<SearchResults />
 		</div>
 	);
 }
