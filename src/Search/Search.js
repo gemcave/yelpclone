@@ -4,6 +4,7 @@ import SearchBar from '../SearchBar/SearchBar.js';
 import styles from './Search.module.css';
 import SubNav from '../NavBar/SubNav/SubNav.js';
 import SearchResultSummary from './SearchResultSummary/SearchResultSummary.js';
+import SearchResults from './SearchResults/SearchResults.js';
 
 function Search(props) {
 	return (
@@ -11,6 +12,7 @@ function Search(props) {
 			<NavBar />
 			<SubNav />
 			<SearchResultSummary />
+			<SearchResults />
 		</div>
 	);
 }
