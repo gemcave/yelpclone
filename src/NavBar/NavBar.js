@@ -8,7 +8,7 @@ function NavBar(props) {
 	return (
 		<div className={styles['nav-bar']}>
 			<Link to={'/'}><img src={logo} className={styles.logo} alt="celp logo"/></Link>
-			<SearchBar small/>
+			<SearchBar small term={props.term} location={props.location}/>
 			<button className={`button ${styles['nav-button']}`}>Log In</button>
 			<button className={`button ${styles['nav-button']}`}>Register</button>
 		</div>
