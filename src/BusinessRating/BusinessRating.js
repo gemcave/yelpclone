@@ -5,14 +5,14 @@ import Rating from 'react-rating';
 function BusinessRating(props) {
 	return (
 		<div className={styles.rating}>
-			<Rating
-				emptySymbol="far fa-star"
-				fullSymbol="fas fa-star"
-				fractions={2}
-				initialRating={3.5}
-				readonly
-			/>
-			<p>724 Reviews</p>
+				<Rating
+						emptySymbol="far fa-star"
+						fullSymbol="fas fa-star"
+						fractions={2}
+						readonly
+						initialRating={props.rating}
+				/>
+				<p>{props.reviewCount} Reviews</p>
 		</div>
 	);
 }
