@@ -6,6 +6,7 @@ function SearchBar(props) {
 	const [term, setTerm] = useState(props.term || '');
 	const [location, setLocation] = useState(props.location || '');
 	const sizeClass = props.small ? '': 'is-medium';
+	// console.log(process.env.REACT_APP_BEARER_TOKEN)
 
 	function submit(e) {
 		if(typeof props.search === 'function'){
