@@ -30,7 +30,7 @@ function Search(props) {
 }
 
 	return (
-		<div>
+		<>
 			<NavBar term={term} location={locationParams} search={search}/>
 			<SubNav />
 			<SearchResultSummary term={searchParams.term} 
@@ -39,7 +39,7 @@ function Search(props) {
                            shownResults={businesses ? businesses.length : 0}
 			/>
 			<SearchResults businesses={businesses}/>
-		</div>
+		</>
 	);
 }
 
