@@ -30,9 +30,9 @@ function SearchBar(props) {
 						onChange={(e) => setTerm(e.target.value)}
 					/>
 				</p>
-				<p className="control">
+				<div className="control">
 					<div className={`button is-static  ${sizeClass}`}>NEAR</div>
-				</p>
+				</div>
 				<p className="control">
 					<input
 						className={`input ${sizeClass} ${styles['input-control']}`}
